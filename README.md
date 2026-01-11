@@ -29,86 +29,93 @@ This handbook is designed as a **progressive learning path** for JavaScript deve
 ## 🗺️ Interactive Roadmap
 
 ```mermaid
-graph LR
-    Start[🎯 Start Here] --> Phase1
+flowchart TD
+    Start([🎯 START YOUR JOURNEY])
     
-    subgraph Phase1[" 📚 Phase 1: Foundations "]
-        B1[JavaScript Basics]
-        B2[Data Types & Variables]
-        B3[Operators & Control Flow]
-    end
+    Start --> P1
     
-    Phase1 --> Phase2
+    P1[📚 PHASE 1<br/>FOUNDATIONS<br/>Weeks 1-2]
+    P1 --> T1[JavaScript Basics]
+    P1 --> T2[Variables & Data Types]
+    P1 --> T3[Operators]
+    P1 --> T4[Control Flow]
     
-    subgraph Phase2[" 🔧 Phase 2: Core Concepts "]
-        C1[Functions & Scope]
-        C2[Objects & Arrays]
-        C3[Execution Context]
-    end
+    T1 & T2 & T3 & T4 --> P2
     
-    Phase2 --> Phase3
+    P2[🔧 PHASE 2<br/>CORE CONCEPTS<br/>Weeks 3-4]
+    P2 --> T5[Functions]
+    P2 --> T6[Execution Context]
+    P2 --> T7[Scope & Closures]
+    P2 --> T8[Arrays]
+    P2 --> T9[Objects]
+    P2 --> T10[Strings]
     
-    subgraph Phase3[" ⚡ Phase 3: Intermediate "]
-        D1[DOM Manipulation]
-        D2[Async JavaScript]
-        D3[ES6+ Features]
-    end
+    T5 & T6 & T7 & T8 & T9 & T10 --> P3
     
-    Phase3 --> Phase4
+    P3[⚡ PHASE 3<br/>INTERMEDIATE<br/>Weeks 5-7]
+    P3 --> T11[DOM Manipulation]
+    P3 --> T12[Browser APIs]
+    P3 --> T13[Async JavaScript]
+    P3 --> T14[Error Handling]
+    P3 --> T15[ES6+ Features]
     
-    subgraph Phase4[" 🚀 Phase 4: Advanced "]
-        E1[OOP & Prototypes]
-        E2[Functional Programming]
-        E3[Design Patterns]
-    end
+    T11 & T12 & T13 & T14 & T15 --> P4
     
-    Phase4 --> Phase5
+    P4[🚀 PHASE 4<br/>ADVANCED<br/>Weeks 8-10]
+    P4 --> T16[OOP]
+    P4 --> T17[Prototypes]
+    P4 --> T18[Functional Programming]
+    P4 --> T19[Design Patterns]
+    P4 --> T20[Memory Management]
     
-    subgraph Phase5[" 💎 Phase 5: Expert "]
-        F1[Performance Optimization]
-        F2[Testing & Security]
-        F3[Advanced Async]
-    end
+    T16 & T17 & T18 & T19 & T20 --> P5
     
-    Phase5 --> Phase6
+    P5[💎 PHASE 5<br/>EXPERT<br/>Weeks 11-13]
+    P5 --> T21[Advanced Async]
+    P5 --> T22[Performance]
+    P5 --> T23[Testing]
+    P5 --> T24[Security]
+    P5 --> T25[Build Tools]
     
-    subgraph Phase6[" 🏆 Phase 6: Mastery "]
-        G1[Architecture Patterns]
-        G2[Frameworks & Libraries]
-        G3[Real-world Projects]
-    end
+    T21 & T22 & T23 & T24 & T25 --> P6
     
-    style Start fill:#FF6B6B,stroke:#C92A2A,stroke-width:3px,color:#FFF
-    style Phase1 fill:#51CF66,stroke:#2F9E44,stroke-width:2px,color:#000
-    style Phase2 fill:#4DABF7,stroke:#1971C2,stroke-width:2px,color:#000
-    style Phase3 fill:#FFD43B,stroke:#F59F00,stroke-width:2px,color:#000
-    style Phase4 fill:#FF8787,stroke:#E03131,stroke-width:2px,color:#000
-    style Phase5 fill:#DA77F2,stroke:#9C36B5,stroke-width:2px,color:#FFF
-    style Phase6 fill:#20C997,stroke:#087F5B,stroke-width:2px,color:#FFF
+    P6[🏆 PHASE 6<br/>MASTERY<br/>Weeks 14+]
+    P6 --> T26[Frameworks]
+    P6 --> T27[Node.js]
+    P6 --> T28[Architecture]
+    P6 --> T29[Real Projects]
     
-    style B1 fill:#D3F9D8,stroke:#2F9E44,color:#000
-    style B2 fill:#D3F9D8,stroke:#2F9E44,color:#000
-    style B3 fill:#D3F9D8,stroke:#2F9E44,color:#000
+    T26 & T27 & T28 & T29 --> End([🎓 JAVASCRIPT MASTER!])
     
-    style C1 fill:#D0EBFF,stroke:#1971C2,color:#000
-    style C2 fill:#D0EBFF,stroke:#1971C2,color:#000
-    style C3 fill:#D0EBFF,stroke:#1971C2,color:#000
+    classDef startEnd fill:#1a1a2e,stroke:#16213e,stroke-width:4px,color:#fff,font-weight:bold,font-size:14px
+    classDef phase1 fill:#00b894,stroke:#00875a,stroke-width:3px,color:#fff,font-weight:bold,font-size:13px
+    classDef phase2 fill:#0984e3,stroke:#0652a8,stroke-width:3px,color:#fff,font-weight:bold,font-size:13px
+    classDef phase3 fill:#fdcb6e,stroke:#f39c12,stroke-width:3px,color:#000,font-weight:bold,font-size:13px
+    classDef phase4 fill:#e17055,stroke:#d63031,stroke-width:3px,color:#fff,font-weight:bold,font-size:13px
+    classDef phase5 fill:#a29bfe,stroke:#6c5ce7,stroke-width:3px,color:#000,font-weight:bold,font-size:13px
+    classDef phase6 fill:#fd79a8,stroke:#e84393,stroke-width:3px,color:#fff,font-weight:bold,font-size:13px
     
-    style D1 fill:#FFF3BF,stroke:#F59F00,color:#000
-    style D2 fill:#FFF3BF,stroke:#F59F00,color:#000
-    style D3 fill:#FFF3BF,stroke:#F59F00,color:#000
+    classDef topic1 fill:#d5f4e6,stroke:#00b894,stroke-width:2px,color:#000,font-size:12px
+    classDef topic2 fill:#cce5ff,stroke:#0984e3,stroke-width:2px,color:#000,font-size:12px
+    classDef topic3 fill:#fff5d6,stroke:#f39c12,stroke-width:2px,color:#000,font-size:12px
+    classDef topic4 fill:#ffd7d0,stroke:#d63031,stroke-width:2px,color:#000,font-size:12px
+    classDef topic5 fill:#e5e0ff,stroke:#6c5ce7,stroke-width:2px,color:#000,font-size:12px
+    classDef topic6 fill:#ffe0ed,stroke:#e84393,stroke-width:2px,color:#000,font-size:12px
     
-    style E1 fill:#FFC9C9,stroke:#E03131,color:#000
-    style E2 fill:#FFC9C9,stroke:#E03131,color:#000
-    style E3 fill:#FFC9C9,stroke:#E03131,color:#000
+    class Start,End startEnd
+    class P1 phase1
+    class P2 phase2
+    class P3 phase3
+    class P4 phase4
+    class P5 phase5
+    class P6 phase6
     
-    style F1 fill:#EED9FF,stroke:#9C36B5,color:#000
-    style F2 fill:#EED9FF,stroke:#9C36B5,color:#000
-    style F3 fill:#EED9FF,stroke:#9C36B5,color:#000
-    
-    style G1 fill:#96F2D7,stroke:#087F5B,color:#000
-    style G2 fill:#96F2D7,stroke:#087F5B,color:#000
-    style G3 fill:#96F2D7,stroke:#087F5B,color:#000
+    class T1,T2,T3,T4 topic1
+    class T5,T6,T7,T8,T9,T10 topic2
+    class T11,T12,T13,T14,T15 topic3
+    class T16,T17,T18,T19,T20 topic4
+    class T21,T22,T23,T24,T25 topic5
+    class T26,T27,T28,T29 topic6
 ```
 
 ---
