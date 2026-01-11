@@ -28,6 +28,7 @@ This handbook is designed as a **progressive learning path** for JavaScript deve
 
 ## 🗺️ Interactive Roadmap
 
+```mermaid
 graph LR
     Start[🎯 Start Here] --> Phase1
     
@@ -108,6 +109,7 @@ graph LR
     style G1 fill:#96F2D7,stroke:#087F5B,color:#000
     style G2 fill:#96F2D7,stroke:#087F5B,color:#000
     style G3 fill:#96F2D7,stroke:#087F5B,color:#000
+```
 
 ---
 
