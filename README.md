@@ -28,47 +28,86 @@ This handbook is designed as a **progressive learning path** for JavaScript deve
 
 ## 🗺️ Interactive Roadmap
 
-```mermaid
-graph TD
-    A[🎯 Start Here] --> B[Phase 1: Foundations]
-    B --> C[Phase 2: Core Concepts]
-    C --> D[Phase 3: Intermediate]
-    D --> E[Phase 4: Advanced]
-    E --> F[Phase 5: Expert]
-    F --> G[Phase 6: Mastery]
+graph LR
+    Start[🎯 Start Here] --> Phase1
     
-    B --> B1[JavaScript Basics]
-    B --> B2[Data Types & Variables]
-    B --> B3[Operators & Control Flow]
+    subgraph Phase1[" 📚 Phase 1: Foundations "]
+        B1[JavaScript Basics]
+        B2[Data Types & Variables]
+        B3[Operators & Control Flow]
+    end
     
-    C --> C1[Functions & Scope]
-    C --> C2[Objects & Arrays]
-    C --> C3[DOM Manipulation]
+    Phase1 --> Phase2
     
-    D --> D1[Async JavaScript]
-    D --> D2[ES6+ Features]
-    D --> D3[Error Handling]
+    subgraph Phase2[" 🔧 Phase 2: Core Concepts "]
+        C1[Functions & Scope]
+        C2[Objects & Arrays]
+        C3[Execution Context]
+    end
     
-    E --> E1[OOP & Prototypes]
-    E --> E2[Functional Programming]
-    E --> E3[Design Patterns]
+    Phase2 --> Phase3
     
-    F --> F1[Performance Optimization]
-    F --> F2[Testing & Debugging]
-    F --> F3[Security Best Practices]
+    subgraph Phase3[" ⚡ Phase 3: Intermediate "]
+        D1[DOM Manipulation]
+        D2[Async JavaScript]
+        D3[ES6+ Features]
+    end
     
-    G --> G1[Architecture Patterns]
-    G --> G2[Frameworks & Libraries]
-    G --> G3[Real-world Projects]
+    Phase3 --> Phase4
     
-    style A fill:#ff6b6b
-    style B fill:#4ecdc4
-    style C fill:#45b7d1
-    style D fill:#96ceb4
-    style E fill:#ffeaa7
-    style F fill:#dfe6e9
-    style G fill:#a29bfe
-```
+    subgraph Phase4[" 🚀 Phase 4: Advanced "]
+        E1[OOP & Prototypes]
+        E2[Functional Programming]
+        E3[Design Patterns]
+    end
+    
+    Phase4 --> Phase5
+    
+    subgraph Phase5[" 💎 Phase 5: Expert "]
+        F1[Performance Optimization]
+        F2[Testing & Security]
+        F3[Advanced Async]
+    end
+    
+    Phase5 --> Phase6
+    
+    subgraph Phase6[" 🏆 Phase 6: Mastery "]
+        G1[Architecture Patterns]
+        G2[Frameworks & Libraries]
+        G3[Real-world Projects]
+    end
+    
+    style Start fill:#FF6B6B,stroke:#C92A2A,stroke-width:3px,color:#FFF
+    style Phase1 fill:#51CF66,stroke:#2F9E44,stroke-width:2px,color:#000
+    style Phase2 fill:#4DABF7,stroke:#1971C2,stroke-width:2px,color:#000
+    style Phase3 fill:#FFD43B,stroke:#F59F00,stroke-width:2px,color:#000
+    style Phase4 fill:#FF8787,stroke:#E03131,stroke-width:2px,color:#000
+    style Phase5 fill:#DA77F2,stroke:#9C36B5,stroke-width:2px,color:#FFF
+    style Phase6 fill:#20C997,stroke:#087F5B,stroke-width:2px,color:#FFF
+    
+    style B1 fill:#D3F9D8,stroke:#2F9E44,color:#000
+    style B2 fill:#D3F9D8,stroke:#2F9E44,color:#000
+    style B3 fill:#D3F9D8,stroke:#2F9E44,color:#000
+    
+    style C1 fill:#D0EBFF,stroke:#1971C2,color:#000
+    style C2 fill:#D0EBFF,stroke:#1971C2,color:#000
+    style C3 fill:#D0EBFF,stroke:#1971C2,color:#000
+    
+    style D1 fill:#FFF3BF,stroke:#F59F00,color:#000
+    style D2 fill:#FFF3BF,stroke:#F59F00,color:#000
+    style D3 fill:#FFF3BF,stroke:#F59F00,color:#000
+    
+    style E1 fill:#FFC9C9,stroke:#E03131,color:#000
+    style E2 fill:#FFC9C9,stroke:#E03131,color:#000
+    style E3 fill:#FFC9C9,stroke:#E03131,color:#000
+    
+    style F1 fill:#EED9FF,stroke:#9C36B5,color:#000
+    style F2 fill:#EED9FF,stroke:#9C36B5,color:#000
+    style F3 fill:#EED9FF,stroke:#9C36B5,color:#000
+    
+    style G1 fill:#96F2D7,stroke:#087F5B,color:#000
+    style G2 fill:#96F2D7,stroke:#087F5B,color:#000
+    style G3 fill:#96F2D7,stroke:#087F5B,color:#000
 
 ---
 
