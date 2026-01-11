@@ -179,5 +179,3 @@ Most Date methods are supported across all modern browsers. However, for consist
 - [Day.js](https://day.js.org/)
 
 ---
-
-© 2025 | [GitHub](https://github.com/username) | Made with ❤️ by JavaScript Enthusiasts

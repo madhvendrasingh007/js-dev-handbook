@@ -141,5 +141,3 @@ Here are some valuable resources to deepen your understanding of JavaScript data
 5. [Eloquent JavaScript: Values, Types, and Operators](https://eloquentjavascript.net/01_values.html)
 
 ---
-
-© 2025 Madhvendra Singh | [GitHub](https://github.com/madhvendrasingh007)

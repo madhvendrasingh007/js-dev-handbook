@@ -145,5 +145,3 @@ For more information about JavaScript data types:
 4. [TypeScript Documentation](https://www.typescriptlang.org/docs/) - For adding static typing to JavaScript
 
 ---
-
-© 2025 Madhvendra Singh | [GitHub](https://github.com/madhvendrasingh007)

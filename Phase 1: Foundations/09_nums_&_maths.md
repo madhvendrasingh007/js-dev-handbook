@@ -76,5 +76,3 @@ console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 4. [W3Schools: JavaScript Numbers](https://www.w3schools.com/js/js_numbers.asp)
 
 ---
-
-© 2025 Madhvendra Singh | [GitHub](https://github.com/madhvendrasingh007)

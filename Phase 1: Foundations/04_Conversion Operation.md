@@ -164,5 +164,3 @@ For more information about JavaScript type conversion:
 4. [Eloquent JavaScript: Type Coercion](https://eloquentjavascript.net/01_values.html)
 
 ---
-
-© 2025 Madhvendra Singh | [GitHub](https://github.com/madhvendrasingh007)

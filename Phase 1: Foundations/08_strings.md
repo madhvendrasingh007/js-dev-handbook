@@ -96,5 +96,3 @@ For more information about JavaScript string handling and data types:
 4. [MDN: JavaScript Data Types and Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ---
-
-© 2025 Madhvendra Singh | [GitHub](https://github.com/madhvendrasingh)
